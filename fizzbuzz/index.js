@@ -38,6 +38,7 @@ function writer(num) {
 function start() {
   $('#number-chooser').submit(function() {
     event.preventDefault();
+    $('.js-results').html('');
     let numChoice = $('#number-choice');
     writer(numChoice.val());
     numChoice.val('');
